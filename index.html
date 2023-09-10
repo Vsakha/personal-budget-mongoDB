@@ -3,26 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Budget</title>
+    <title>Personal Budget - A Budget Management Application</title> <!-- SEO Change1: Modified the title -->
+    <!-- SEO Change2: Added meta description-->
+    <meta name = "description"  content = "login to the account and manage your budget"> 
     <link rel="stylesheet" href="/reset.css">
     <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="../pb/reset.css">
+    <link rel="stylesheet" href="../pb/main.css">
 </head>
 <body>
 
-    <div class="menu">
+    <nav class="menu"> <!--Semantic change1: Replaced div with nav-->
         <ul>
-            <li><a href="/">Homepage</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="/about.html">About</a></li>
             <li><a href="/login.html">Login</a></li>
             <li><a href="https://google.com">Google</a></li>
         </ul>
-    </div>
+    </nav>
 
-    <div class="hero">
-        <h1>Personal Budget</h1>
+    <header class = "hero" aria-labelledby="hero-heading"> <!--Semantic change2: Replaced div with header -->
+        <!-- This is a A11y Change1 -->
+        <h1 id="hero-heading">Personal Budget</h1>
         <h2>A personal-budget management app</h2>
-    </div>
+    </header>
 
+    <!-- This is a A11y Change2 -->
+<main class="main-content">
     <div class="container center">
 
         <div class="page-area">
@@ -94,12 +101,14 @@
         </div>
 
     </div>
-
-    <div class="bottom">
+</main>
+    <footer> <!--Semantic change3: Replaced div with footer-->
         <div class="center">
-            All rights reserved &copy; Fabio Nolasco
+            All rights reserved &copy; Gangadhar Sakha <!-- SEO change3: Added copy write for the site -->
         </div>
-    </div>
+        <div role = "button" tabindex = "0"> </div> <!--Added a11y change3-->
+        <!-- Added role = "button" and tabindex -->
+    </footer>
 
 </body>
 </html>
