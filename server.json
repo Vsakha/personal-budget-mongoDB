@@ -10,8 +10,8 @@
      },
      {
          "title": "Groceries",
-         "budget": 90
-     },
+         "budget": 85
+        },
      {
         "title": "Kitchenware",
         "budget" : 110
@@ -30,4 +30,4 @@
      }
  
  ]
- };  
+ }
