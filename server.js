@@ -20,7 +20,7 @@ app.get("/budget", (req, res) => {
     useUnifiedTopology: true,
   })
   .then(() => {
-    console.log("Connected to the Database");
+    console.log("Database connected");
     budgetModel.find({})
       .then((data) => {
         res.json(data);
@@ -42,7 +42,7 @@ app.post("/budget", (req, res) => {
     useUnifiedTopology: true,
   })
   .then(() => {
-    console.log("Connected to the database");
+    console.log("Database connected");
     const newItem = new budgetModel(req.body);
     budgetModel.create(newItem) 
       .then((data) => {
